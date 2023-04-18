@@ -39,7 +39,7 @@ class ApiRestControllerTests {
 			.andDo(print())
 			.andExpect(matchAll(
 				status().isOk(),
-				jsonPath("nome").value("Mega-Sena"),
+				jsonPath("nome").value("Mega Sena"),
 				jsonPath("concurso").value(1),
 				jsonPath("dezenas", hasSize(6)),
 				jsonPath("timeCoracao").doesNotExist())
